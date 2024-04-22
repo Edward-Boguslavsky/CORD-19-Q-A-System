@@ -15,7 +15,7 @@ def progress_bar(percentage, size = 30):
 NUM_DOCUMENTS = 10000
 
 # Path to the directory where the JSON files are stored
-INPUT_FOLDER = "C:/Users/eddyi/Downloads/COVID-19-research/document_parses/pdf_json"
+INPUT_FOLDER = "LINK_TO_DATASET_FOLDER/COVID-19-research/document_parses/pdf_json"
 
 # Define output folder for indexing data or create one if it doesn't exist
 output_folder = "indexed_data"

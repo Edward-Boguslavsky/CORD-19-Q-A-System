@@ -113,18 +113,5 @@ print(f"Question: {search_query}")
 for answer, score in results[:NUM_ANSWERS]:
     print(f"Answer: {answer} (score: {score:0.3f})")
 
-"""
-# Calculate the best answer by summing scores of similar answers
-best_results = defaultdict(float)
-for answer, score in results:
-    best_results[answer.lower().strip()] += score
-
-# Choose the answer with the highest score as the best answer
-best_results = sorted(best_results.items(), key=lambda item: item[1], reverse=True)
-
-# Now you can construct the sentence
-print(f"\nThe best answer is '{best_results[0][0]}' with a total score of {best_results[0][1]:0.3f}")
-"""
-
 # Choose the answer with the highest score as the best answer
 print(f"\nThe best answer is '{results[0][0]}' with a score of {results[0][1]:0.3f}")
