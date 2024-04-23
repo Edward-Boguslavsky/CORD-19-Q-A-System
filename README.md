@@ -1,17 +1,17 @@
 # CORD-19 Q&A System
 
-An advanced complete question and answering system trained on the CORD-19 dataset by [Edward Boguslavsky](https://github.com/Edward-Boguslavsky) and [Humza Fazal](https://github.com/HFuz).
+An advanced, complete question and answering system trained on the CORD-19 dataset by [Edward Boguslavsky](https://github.com/Edward-Boguslavsky) and [Humza Fazal](https://github.com/HFuz).
 
 ## Description
 
-This question and answering system gives anyone the ability to quickly and accurately retrieve COVID-19 related information from 400,000+ scholarly articles written about the virus. The system was written in Python with the following libraries:
+This question and answering system gives anyone the ability to easily and accurately answer COVID-19 related questions from the 400,000+ scholarly articles written about the virus. The system was written in Python with the following libraries:
 
  - [Whoosh](https://pypi.org/project/Whoosh/) (indexing)
  - [spaCy](https://spacy.io/) (pre-processing)
  - [NLTK](https://www.nltk.org/) (pre-processing)
  - [HuggingFace](https://huggingface.co/) (question-answering)
 
-Firstly, Whoosh is used to index the hundreds of thousands of documents making them extremely fast to traverse and reducing the storage size of the dataset by about one third. Next, once a question is asked, spaCy and NLTK pre-process the question by extracting search terms and finding synonyms respectively. The search terms are then used to retrieve the most relevant scholarly articles. These articles are efficiently broken up into 512-token chunks and fed into BioBERT, a HuggingFace model pre-trained on biomedical data. The specific model we used is [biobert-large-cased-v1.1](https://huggingface.co/dmis-lab/biobert-large-cased-v1.1) for its accuracy in this application. Several answers are outputted and only the most accurate one is chosen.
+Firstly, Whoosh is used to index the hundreds of thousands of documents making them extremely fast to traverse and reducing the storage size of the dataset by about one third. Next, once a question is asked, spaCy and NLTK pre-process the question by extracting search terms and finding synonyms respectively. The complete search terms are then used to retrieve the most relevant scholarly articles. Lastly, these articles are efficiently broken up into 512-token chunks and fed into BioBERT, a HuggingFace model pre-trained on biomedical data. The specific model we used is [biobert-large-cased-v1.1](https://huggingface.co/dmis-lab/biobert-large-cased-v1.1) for its accuracy in this application. Several possible answers are outputted but only the most accurate one is chosen as the final answer.
 
 ## Instructions
 
