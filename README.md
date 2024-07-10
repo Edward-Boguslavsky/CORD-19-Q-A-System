@@ -1,6 +1,6 @@
 # CORD-19 Q&A System
 
-An advanced, complete question and answering system trained on the CORD-19 dataset by [Edward Boguslavsky](https://github.com/Edward-Boguslavsky) and [Humza Fazal](https://github.com/HFuz).
+An advanced, complete question and answering system trained on the CORD-19 dataset by [Edward Boguslavsky](https://github.com/Edward-Boguslavsky) and [Humza Fazal](https://github.com/HFuz). This system and its subsequent academic paper was accepted by the [ECNLPIR](https://www.ecnlpir.org/) and will be reviewed and published by major citation databases in the near future. Stay tuned!
 
 ## Description
 
